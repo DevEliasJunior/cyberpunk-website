@@ -1,0 +1,516 @@
+
+@font-face {
+    font-family: cyber;
+    src: local(cyberway riders), url(https://www.fontspace.com/cyberway-riders-font-f43849);
+}
+@font-face {
+    font-family: valorax;
+    src: local(valorax), url( https://www.fontspace.com/valorax-font-f89146);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.menu--hamb{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    display: none;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.menu--line{
+    width: 100%;
+    height: 6px;
+    background-color: blueviolet;
+}
+
+
+header{
+    width:100%;
+    height: 100px;
+    position: absolute;
+}
+
+.header{
+    max-width: 1200px;
+    height:100%;
+    display: flex;
+    margin:auto;
+}
+
+.header .logo--area{
+    width: 200px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cyber;
+    font-size: 65px;
+    color: yellow;
+}
+.header .redes--socias--area{
+    width: 200px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header nav{
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header nav ul,li{
+    display: flex;
+    gap: 30px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: cyber;
+    display: block;
+    border: solid 2px transparent;
+    padding: 5px 30px;
+    transition: linear 0.1s;
+    color: blueviolet;
+}
+.header ul li a:hover{
+    border: solid 2px blueviolet;
+    border-radius: 20px;
+    color: #fff;
+}
+
+
+.section{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-image: url(/images/bg/Cyberpunk-2077-Epic-Games-Store.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.bg--shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.container{
+    height: 100vh;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin: auto;
+}
+
+.container .left--said{
+    width:50%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+   
+}
+.container .right--said{
+   flex:1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+}
+
+.container .left--said h2{
+    font-size: 54px;
+    font-family: cyber;
+    margin-bottom: 30px;
+    color: yellow;
+    letter-spacing: 2px;
+    text-align: start;
+}
+
+.container .left--said div{
+    text-align: start;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.container .left--said .botao--area a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 20px;
+    padding: 9px 29px;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    font-family: valorax;
+    transition: linear 0.2s;
+}
+
+.container .left--said .botao--area a:hover{
+    background-color: yellow;
+    color: #000;
+}
+
+
+
+.right--said .circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(212, 0, 159)
+}
+
+.right--said #persona{
+    transition: linear 5s;
+    animation-name: tscale;
+    animation-duration:5s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    position: absolute;
+}
+.right--said .circle{
+    animation-name: circle;
+    transition: linear 5s;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.section2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg/4709150.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.section2 .bg--shadow.dois{
+    display: block;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.container.dois{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+}
+
+.section2--left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+}
+.section2--left h3{
+    font-size: 40px;
+    font-family: valorax;
+    color: yellow;
+    letter-spacing: 3px;
+}
+.section2--left p{
+    font-size: 18px;
+}
+.section2--left .barra--section2{
+    width: 100%;
+    height: 20px;
+    background-color: yellow;
+}
+.section2--right{
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+.section2--right img{
+    width: 800px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.section3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(images/bg/desktop-wallpaper-purple-galaxy-dark-purple-galaxy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.section3 .cards{
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.card--titulo{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    font-family: cyber;
+}
+
+.cards--area{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.card--item{
+    text-align: center;
+    border: 2px solid blueviolet;
+    width: 180px;
+    height: 250px;
+    border-radius:24px 24px 25px 25px;
+    box-shadow: 2px 2px 10px 5px blueviolet;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+.card--item:hover{
+    scale: 1.1;
+}
+
+.card--item h4{
+    font-family: valorax;
+    margin-top: 20px;
+    font-size: 30px;
+    color: yellow;
+    padding-bottom: 10px;
+    border-bottom: 2px solid blueviolet;
+}
+
+.card--item div{
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 10px;
+    margin-top: 30px;
+}
+
+.section3 .nav1{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    animation-duration: 16s;
+    transition: linear 16s;
+    animation-name: nav1;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
+}
+.section3 .nav2{
+    position: absolute;
+    bottom: 60px;
+    width: 10%;
+    height: auto;
+    animation-duration: 16s;
+    transition: linear 16s;
+    animation-name: nav2;
+    animation-iteration-count: infinite ;
+    animation-direction:normal;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    color: #ccc;
+}
+
+@keyframes nav2 {
+    0%{transform: rotate(0deg);}
+
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes nav1{
+    0% {margin-left: 0; scale: 0.5;}
+
+    100%{margin-left: 600px; scale: 1; margin-bottom: 140px;}
+}
+
+@keyframes circle {
+   0% {scale: 0; opacity: 0;}
+
+   100% {scale: 1.1; opacity: 1;}
+}
+
+
+@keyframes tscale {
+    0% {scale: 0.8; opacity: 0;}
+
+    100% {scale: 1; opacity: 1;}
+}
+
+
+
+
+
+
+@media (max-width: 1026px) {
+    .container{
+        max-width: 900px;
+    }
+    .container.dois{
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 780px) {
+    @keyframes nav1{
+        0% {margin-left: 0;}
+    
+        100%{margin-left: 100px; margin-bottom: 170px;}
+    }
+    .section3 .nav1{
+        width: 20%;
+        top: 200px;
+        left: 200px;
+        animation-duration: 7s;
+        transition: linear 7s;
+    }
+    .card--item:last-child{
+        display: none;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+    .menu--hamb{
+        display: flex;
+    }
+    .container .left--said h2{
+        font-size: 38px;
+    }
+    .container{
+        max-width: 650px;
+    }
+    @keyframes circle {
+        0% {scale: 0; opacity: 0;}
+     
+        100% {scale: 0.8; opacity: 1;}
+     }
+     .right--said #persona{
+        width: 300px;
+        height: auto;
+     }
+     .container.dois{
+        max-width: 650px;
+    }
+    .section2--right img{
+        width: 550px;
+        margin-right: -40px;
+    }
+    .section2--left h3{
+        font-size: 34px;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .container .right--said{
+        display:none;
+    }
+    .container .left--said{
+        width: 100%;
+        padding:0px 10px;
+        align-items:center;
+    }
+    .container .left--said h2{
+        text-align: center;
+        font-size: 38px;
+    }
+    .container .left--said div{
+        text-align: center;
+        font-size: 15px;
+    }
+    .header .logo--area{
+        font-size: 50px;
+
+    }
+    .cards--area{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3{
+        height: calc(200vh + 100px);
+    }
+    .section3 .cards{
+        height: 100%;
+    }
+    .card--item{
+        width: 190px;
+        margin-top: 60px;
+    }
+    .card--titulo{
+        margin-top: 60px;
+    }
+    .section3 .nav1{
+        left: 0;
+    }
+    .section2{
+        height: calc(100vh + 200px);
+    }
+    .container.dois{
+        flex-direction: column;
+        height: 100%;
+    }
+    .section2--left{
+        height: 50%;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin-top: 80px;
+    }
+    .container.dois{
+       flex: 1;
+    }
+    .section2--right img{
+        margin-right: -140px;
+        width: 420px;
+    }
+}
